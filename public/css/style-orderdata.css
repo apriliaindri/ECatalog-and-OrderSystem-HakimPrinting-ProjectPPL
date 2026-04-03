@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.header img {
+    position: absolute;
+    left: 20px;
+    width: 60px;
+}
+
+/* BACKGROUND LAYER */
+.bg {
+    position: relative;
+}
+
+.pink-top {
+    height: 175px;
+    background: #e5c1c1;
+}
+
+.white-middle {
+    height: 175px;
+    background: white;
+}
+
+.pink-bottom {
+    height: 175px;
+    background: #e5c1c1;
+}
+
+/* CARD FLOATING DI TENGAH */
+.card-container {
+    position: absolute;
+    top: 50%;              /* posisi tengah layar */
+    left: 50%;
+    transform: translate(-50%, -50%); /* benar-benar center */
+    z-index: 3;
+}
+
+/* CARD */
+.card {
+    background: white;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+}
+
+/* INPUT BOX */
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c77;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 5px;
+    background: white;
+}
+
+.input-box i {
+    margin-right: 8px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn button {
+    background: #8b2e2e;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background: #6f2222;
+}
+
+/* BACKGROUND LAYER */
+.bg-top {
+    background: #e5c1c1;
+    height: 150px;
+}
+
+.bg-middle {
+    background: white;
+    height: 150px;
+}
+
+.bg-bottom {
+    background: #e5c1c1;
+    height: 150px;
+}
+
+/* CONTAINER (biar card naik ke tengah) */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: -180px; /* ini bikin card naik ke tengah */
+    position: relative;
+    z-index: 2;
+}

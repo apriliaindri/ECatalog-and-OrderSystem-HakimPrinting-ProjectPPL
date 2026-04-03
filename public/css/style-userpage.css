@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 50px;   /* SAMA seperti halaman utama */
+    height: 70px;         /* paksa tinggi biar konsisten */
+
+    background: white;
+    position: relative;
+    box-sizing: border-box; /* biar height konsisten */
+}
+
+/* LOGO */
+.logo {
+    width: 40px;
+}
+
+/* MENU KANAN */
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+/* LINK */
+.navbar h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 20px; /* samakan dengan halaman utama */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px; /* samakan */
+}
+
+/* GREETING */
+.greeting {
+    background: #e5c1c1;
+    padding: 30px;
+}
+
+.greeting h3 {
+    margin: 0;
+}
+
+/* USER SECTION */
+.user-section {
+    background: white;
+    padding: 20px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center; /* pusatkan */
+    gap: 80px;               /* atur jarak antar item */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 40px;
+}
+
+.menu-sent img {
+    width: 45px;
+    height: 37px;
+}
+
+.menu-item p {
+    margin-top: 10px;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    background: #e5c1c1;
+    padding: 40px;
+    gap: 30px;
+    align-items: center;
+}
+
+.map {
+    margin-left: 80px;
+}
+
+.info {
+    margin-left: 50px;
+}
+
+.info h2 {
+    font-size: 30px;
+}
+
+/* HOVER */
+.navbar a:hover {
+    text-decoration: underline;
+    color: #8b2e2e;
+}

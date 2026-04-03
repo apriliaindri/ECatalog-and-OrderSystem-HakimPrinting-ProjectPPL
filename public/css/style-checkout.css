@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: white;
+}
+
+/* ================= HEADER ================= */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 15px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+
+    /* shadow biar timbul */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header h2 {
+    margin: 0;
+}
+
+/* ================= CONTENT ================= */
+.content {
+    padding-bottom: 100px;
+}
+
+/* ================= ALAMAT ================= */
+.alamat {
+    background: white;
+    padding: 30px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.alamat h4 {
+    margin: 0 0 5px 0;
+}
+
+.alamat p {
+    margin: 0;
+    font-size: 13px;
+    color: black;
+}
+
+/* ================= SECTION PINK ================= */
+.section-pink {
+    background: #e5c1c1;
+    padding: 15px;
+}
+
+/* ================= PRODUK ================= */
+.produk-item {
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* gambar */
+.produk-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* detail */
+.produk-detail {
+    margin-left: 15px;
+}
+
+.produk-detail h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.harga {
+    margin: 5px 0;
+    color: #8b2e2e;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.jumlah {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+/* ================= PAYMENT ================= */
+.payment {
+    background: white;
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+}
+
+.payment p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ================= BOTTOM BAR ================= */
+.checkout-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* total */
+.total p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.total span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* button */
+.checkout-bar button {
+    background: #8b2e2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.checkout-bar button:hover {
+    background: #6f2222;
+}
+
+/* ================= INFORMASI UNDANGAN ================= */
+.informasi {
+    background: white;
+    padding: 30px;
+}
+
+/* JUDUL */
+.informasi h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+/* ITEM */
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+/* KIRI (label) */
+.info-item span:first-child {
+    color: black;
+}
+
+/* KANAN (isi data) */
+.info-item span:last-child {
+    color: #999;
+}
+
+/* ================= PENGIRIMAN ================= */
+.pengiriman {
+    background: #e5c1c1;
+    padding: 30px;
+}
+
+/* JUDUL */
+.pengiriman h4 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+}
+
+/* NAMA KURIR */
+.kurir {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #333;
+}
+
+/* DETAIL (berat & harga sejajar) */
+.pengiriman-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+/* kiri */
+.pengiriman-detail span:first-child {
+    color: #333;
+}
+
+/* kanan */
+.pengiriman-detail span:last-child {
+    color: #333;
+    font-weight: 500;
+}
+
+/* ================= CATATAN ================= */
+.catatan {
+    background: white;
+    padding: 30px;
+}
+
+/* ITEM */
+.catatan-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+/* kiri */
+.catatan-item span:first-child {
+    color: black;
+}
+
+/* kanan */
+.catatan-item span:last-child {
+    color: #999;
+}
+
+/* khusus total biar lebih tegas */
+.catatan-item:last-child span:last-child {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ================= METODE PEMBAYARAN ================= */
+.payment {
+    background: #e5c1c1; /* pink */
+    padding: 15px 20px;
+}
+
+/* judul */
+.payment h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+/* dropdown */
+.payment select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    background: white;
+}

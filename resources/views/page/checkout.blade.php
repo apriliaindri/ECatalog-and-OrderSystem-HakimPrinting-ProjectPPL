@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="{{ asset('css/style-checkout.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h2>Checkout</h2>
+</div>
+
+<div class="content">
+
+    <!-- ALAMAT -->
+    <div class="alamat">
+        <h4>Alamat</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+
+    <!-- SECTION PINK -->
+    <div class="section-pink">
+
+        <!-- PRODUK -->
+        <div class="produk-item">
+            <div class="produk-img">
+                <img src="{{ asset('images/img2.jpeg') }}">
+            </div>
+
+            <div class="produk-detail">
+                <h4>Produk A</h4>
+                <p class="harga">Rp 20.000,00</p>
+                <p class="jumlah">x 100</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- INFORMASI UNDANGAN -->
+<div class="informasi">
+    <h4>Informasi Undangan</h4>
+
+    <div class="info-item">
+        <span>Nama Lengkap Mempelai Pria</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Alamat Mempelai Pria</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Nama Orang Tua Mempelai Pria</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Nama Lengkap Mempelai Wanita</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Alamat Mempelai Wanita</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Nama Orang Tua Mempelai Wanita</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Tanggal Akad (Waktu Akad)</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Lokasi Akad</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Tanggal Resepsi (Waktu Resepsi)</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Lokasi Resepsi</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+
+    <div class="info-item">
+        <span>Quotes (Opsional)</span>
+        <span>xxxxxxxxxxxxxxxx</span>
+    </div>
+</div>
+
+<!-- PENGIRIMAN -->
+<div class="pengiriman">
+    <h4>Pengiriman</h4>
+
+    <p class="kurir">RajaOngkir</p>
+
+    <div class="pengiriman-detail">
+        <span>xxx kg</span>
+        <span>Rp. xxx</span>
+    </div>
+</div>
+
+<!-- CATATAN & TOTAL PESANAN -->
+<div class="catatan">
+
+    <div class="catatan-item">
+        <span>Catatan:</span>
+        <span>xxxxxxxxxx</span>
+    </div>
+
+    <div class="catatan-item">
+        <span>Total Pesanan (xxx lembar)</span>
+        <span>Rp. xxxxx,xx</span>
+    </div>
+
+</div>
+
+<!-- METODE PEMBAYARAN -->
+<div class="payment">
+
+    <h4>Metode Pembayaran</h4>
+
+    <select>
+        <option value="">Pilih Metode Pembayaran</option>
+        <option value="bca">BCA</option>
+        <option value="bri">BRI</option>
+        <option value="dana">DANA</option>
+        <option value="gopay">GoPay</option>
+        <option value="mandiri">Mandiri</option>
+    </select>
+
+</div>
+
+<!-- BOTTOM BAR -->
+<div class="checkout-bar">
+    <div class="total">
+        <p>Total Pembayaran</p>
+        <span>Rp. XXX.XXX</span>
+    </div>
+
+    <button onclick="goFinish()">Checkout</button>
+</div>
+
+<script>
+function goFinish() {
+    alert("Checkout berhasil (simulasi)");
+}
+</script>
+
+<script>
+function tampilMetode() {
+    const select = document.getElementById("metode");
+    const hasil = document.getElementById("hasil-metode");
+
+    if (select.value !== "") {
+        hasil.innerText = select.value;
+    } else {
+        hasil.innerText = "";
+    }
+}
+</script>
+
+</body>
+</html>
