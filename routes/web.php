@@ -19,7 +19,7 @@ Route::get('/signup1', function () {
 });
 
 Route::get('/signin1', function () {
-    return view('page.signin'); // ini halaman login
+    return view('page.signin');
 });
 
 Route::get('/signin', function () {
@@ -27,20 +27,18 @@ Route::get('/signin', function () {
 });
 
 Route::get('/signup1', function () {
-    return view('page.signup'); // sesuaikan nama file blade
+    return view('page.signup');
 });
 
 
 Route::get('/signout', function () {
-    return view('page.home'); // sesuaikan nama file blade
+    return view('page.home');
 });
 
-/* DETAIL PRODUCT */
 Route::get('/product/{id}', function ($id) {
     return view('page.detail-product', ['id' => $id]);
 });
 
-/* ORDER (TANPA LOGIN) */
 Route::get('/order/{id}', function ($id) {
     return view('page.order-data', ['id' => $id]);
 });
@@ -59,5 +57,5 @@ Route::get('/konfirmasi', function () {
 
 Route::post('/logoutconfirm', function () {
     Auth::logout();
-    return redirect('/home');
+    return redirect('/');
 })->name('logoutconfirm');

@@ -29,6 +29,7 @@
     <div class="bubble">
         <h2>Terima Kasih!</h2>
 
+
         <p>
             Pesanan Anda telah diterima! <br>
         </p>
