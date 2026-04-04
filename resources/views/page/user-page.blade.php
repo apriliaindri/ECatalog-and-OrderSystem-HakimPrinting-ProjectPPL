@@ -9,48 +9,55 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+{{-- NAVBAR --}}
 <nav class="navbar">
-    <img src="logo.png" class="logo">
+    <img src="{{ asset('images/logo.png') }}" class="logo">
 
     <h2>User Page</h2>
 
     <ul>
-        <li><a href="/signout">Sign Out</a></li>
+        <li>
+            <form action="/logout" method="POST">
+                @csrf
+                <button type="submit" style="background:none; border:none; cursor:pointer;">
+                    Sign Out
+                </button>
+            </form>
+        </li>
     </ul>
 </nav>
 
-<!-- GREETING -->
+{{-- GREETING --}}
 <div class="greeting">
-    <h3>Halo, User</h3>
+    <h3>Halo, {{ auth()->user()->name ?? 'User' }}</h3>
 </div>
 
-<!-- MENU -->
+{{-- MENU --}}
 <div class="user-section">
     <div class="menu">
         <div class="menu-item">
-            <img src="images/processed.png">
+            <img src="{{ asset('images/processed.png') }}">
             <p>Diproses</p>
         </div>
 
-        <div class="menu-sent">
-            <img src="images/sent.png">
+        <div class="menu-item">
+            <img src="{{ asset('images/shipping.png') }}">
             <p>Dikirim</p>
         </div>
 
         <div class="menu-item">
-            <img src="images/finished.png">
+            <img src="{{ asset('images/finished.png') }}">
             <p>Selesai</p>
         </div>
 
         <div class="menu-item">
-            <img src="images/catalog.png">
+            <img src="{{ asset('images/catalog.png') }}">
             <p>Katalog</p>
         </div>
     </div>
 </div>
 
-<!-- CONTACT -->
+{{-- CONTACT --}}
 <section class="contact">
     <div class="map">
         <iframe

@@ -7,9 +7,8 @@ body {
     margin: 0;
 }
 
-/* WARNA BERGANTIAN SECTION */
 section:nth-of-type(odd) {
-    background-color: #d8bcbc; /* pink */
+    background-color: #d8bcbc;
 }
 
 section:nth-of-type(even) {
@@ -31,9 +30,9 @@ section:nth-of-type(even) {
 }
 
 .navbar a {
-    text-decoration: none; /* hilangkan underline */
-    color: black;          /* samakan dengan teks biasa */
-    cursor: pointer;       /* tetap bisa diklik */
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -89,10 +88,9 @@ section:nth-of-type(even) {
 
 /* DETAIL PRODUCT */
 .detail-wrapper {
-    padding: 60px 20px; /* hapus background statis supaya ikut warna section */
+    padding: 60px 20px;
 }
 
-/* CARD */
 .detail-card {
     background: #f5f5f5;
     max-width: 650px;
@@ -101,28 +99,24 @@ section:nth-of-type(even) {
     border-radius: 12px;
 }
 
-/* HEADER */
 .detail-header {
     display: flex;
-    justify-content: center;   /* judul benar-benar di tengah */
+    justify-content: center;
     align-items: center;
-    position: relative;        /* acuan untuk tombol */
+    position: relative;
 }
 
-/* Judul tetap center */
 .detail-header h2 {
     font-size: 30px;
     margin: 0;
     text-align: center;
 }
 
-/* Tombol close di ujung kanan */
 .close-btn {
     position: absolute;
-    right: 0;          /* nempel kanan */
+    right: 0;
     top: 10%;
-    transform: translateY(-50%); /* biar sejajar vertikal */
-
+    transform: translateY(-50%);
     text-decoration: none;
     font-size: 20px;
     color: black;
@@ -152,7 +146,6 @@ section:nth-of-type(even) {
     font-size: 14px;
 }
 
-/* BUTTON */
 .detail-desc button {
     margin-top: 15px;
     background: #8b2e2e;
@@ -174,7 +167,7 @@ section:nth-of-type(even) {
 .map {
     display: flex;
     justify-content: center;
-    margin-left: 100px; /* bikin tengah horizontal */
+    margin-left: 100px;
 }
 
 .contact h2 {
@@ -187,10 +180,9 @@ section:nth-of-type(even) {
     margin-left: 100px;
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 @media (max-width: 768px) {
 
-    /* NAVBAR */
     .navbar {
         flex-direction: column;
         padding: 10px;
@@ -203,7 +195,6 @@ section:nth-of-type(even) {
         align-items: center;
     }
 
-    /* HERO */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -219,7 +210,6 @@ section:nth-of-type(even) {
         width: 100%;
     }
 
-    /* ABOUT */
     .about {
         flex-direction: column;
         text-align: center;
@@ -233,13 +223,11 @@ section:nth-of-type(even) {
         width: 100%;
     }
 
-    /* PRODUCT GRID */
     .grid {
-        grid-template-columns: repeat(2, 1fr); /* jadi 2 kolom */
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    /* CONTACT */
     .contact {
         flex-direction: column;
         text-align: center;
@@ -254,7 +242,6 @@ section:nth-of-type(even) {
         margin-left: 0;
     }
 
-    /* DETAIL IMAGES */
     .detail-images {
         flex-direction: column;
     }
@@ -264,7 +251,6 @@ section:nth-of-type(even) {
     }
 }
 
-/* OPTIONAL: jika ingin tetap ada background putih khusus untuk produk tertentu */
 .product.white {
     background: white;
 }

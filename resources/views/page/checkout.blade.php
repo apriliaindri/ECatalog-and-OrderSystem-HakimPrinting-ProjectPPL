@@ -8,26 +8,28 @@
 </head>
 <body>
 
-<!-- HEADER -->
+{{-- HEADER --}}
 <div class="header">
     <h2>Checkout</h2>
 </div>
 
 <div class="content">
 
-    <!-- ALAMAT -->
+    {{-- ALAMAT --}}
     <div class="alamat">
-        <h4>Alamat</h4>
+        <h4 class="title-icon">
+            <img src="{{ asset('images/location.png') }}">
+            Alamat
+        </h4>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
     </div>
 
-    <!-- SECTION PINK -->
     <div class="section-pink">
 
-        <!-- PRODUK -->
+        {{-- PRODUK --}}
         <div class="produk-item">
             <div class="produk-img">
                 <img src="{{ asset('images/img2.jpeg') }}">
@@ -42,117 +44,129 @@
 
     </div>
 
-    <!-- INFORMASI UNDANGAN -->
-<div class="informasi">
-    <h4>Informasi Undangan</h4>
+    {{-- INFORMASI UNDANGAN --}}
+    <div class="informasi">
+        <h4 class="title-icon">
+            <img src="{{ asset('images/note.png') }}">
+            Informasi Undangan
+        </h4>
 
-    <div class="info-item">
-        <span>Nama Lengkap Mempelai Pria</span>
-        <span>xxxxxxxxxxxxxxxx</span>
+        <div class="info-item">
+            <span>Nama Lengkap Mempelai Pria</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Alamat Mempelai Pria</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Nama Orang Tua Mempelai Pria</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Nama Lengkap Mempelai Wanita</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Alamat Mempelai Wanita</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Nama Orang Tua Mempelai Wanita</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Tanggal Akad (Waktu Akad)</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Lokasi Akad</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Tanggal Resepsi (Waktu Resepsi)</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Lokasi Resepsi</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
+
+        <div class="info-item">
+            <span>Quotes (Opsional)</span>
+            <span>xxxxxxxxxxxxxxxx</span>
+        </div>
     </div>
 
-    <div class="info-item">
-        <span>Alamat Mempelai Pria</span>
-        <span>xxxxxxxxxxxxxxxx</span>
+    {{-- PENGIRIMAN --}}
+    <div class="pengiriman">
+        <h4 class="title-icon">
+            <img src="{{ asset('images/shipping.png') }}">
+            Pengiriman
+        </h4>
+
+        <p class="kurir">RajaOngkir</p>
+
+        <div class="pengiriman-detail">
+            <span>xxx kg</span>
+            <span>Rp. xxx</span>
+        </div>
     </div>
 
-    <div class="info-item">
-        <span>Nama Orang Tua Mempelai Pria</span>
-        <span>xxxxxxxxxxxxxxxx</span>
+    {{-- CATATAN & TOTAL PESANAN --}}
+    <div class="catatan">
+
+        <div class="catatan-item">
+            <span>Catatan:</span>
+            <span>xxxxxxxxxx</span>
+        </div>
+
+        <div class="catatan-item">
+            <span>Total Pesanan (xxx lembar)</span>
+            <span>Rp. xxxxx,xx</span>
+        </div>
+
     </div>
 
-    <div class="info-item">
-        <span>Nama Lengkap Mempelai Wanita</span>
-        <span>xxxxxxxxxxxxxxxx</span>
+    {{-- METODE PEMBAYARAN --}}
+    <div class="payment">
+        <h4 class="title-icon">
+            <img src="{{ asset('images/payment.png') }}">
+            Metode Pembayaran
+        </h4>
+
+        <select>
+            <option value="">Pilih Metode Pembayaran</option>
+            <option value="bca">BCA</option>
+            <option value="bri">BRI</option>
+            <option value="dana">DANA</option>
+            <option value="gopay">GoPay</option>
+            <option value="mandiri">Mandiri</option>
+        </select>
+
     </div>
 
-    <div class="info-item">
-        <span>Alamat Mempelai Wanita</span>
-        <span>xxxxxxxxxxxxxxxx</span>
+    {{-- BOTTOM BAR --}}
+    <div class="checkout-bar">
+        <div class="total">
+            <p>Total Pembayaran</p>
+            <span>Rp. XXX.XXX</span>
+        </div>
+
+        <a href="/konfirmasi">
+            <button>Checkout</button>
+        </a>
     </div>
 
-    <div class="info-item">
-        <span>Nama Orang Tua Mempelai Wanita</span>
-        <span>xxxxxxxxxxxxxxxx</span>
-    </div>
-
-    <div class="info-item">
-        <span>Tanggal Akad (Waktu Akad)</span>
-        <span>xxxxxxxxxxxxxxxx</span>
-    </div>
-
-    <div class="info-item">
-        <span>Lokasi Akad</span>
-        <span>xxxxxxxxxxxxxxxx</span>
-    </div>
-
-    <div class="info-item">
-        <span>Tanggal Resepsi (Waktu Resepsi)</span>
-        <span>xxxxxxxxxxxxxxxx</span>
-    </div>
-
-    <div class="info-item">
-        <span>Lokasi Resepsi</span>
-        <span>xxxxxxxxxxxxxxxx</span>
-    </div>
-
-    <div class="info-item">
-        <span>Quotes (Opsional)</span>
-        <span>xxxxxxxxxxxxxxxx</span>
-    </div>
-</div>
-
-<!-- PENGIRIMAN -->
-<div class="pengiriman">
-    <h4>Pengiriman</h4>
-
-    <p class="kurir">RajaOngkir</p>
-
-    <div class="pengiriman-detail">
-        <span>xxx kg</span>
-        <span>Rp. xxx</span>
-    </div>
-</div>
-
-<!-- CATATAN & TOTAL PESANAN -->
-<div class="catatan">
-
-    <div class="catatan-item">
-        <span>Catatan:</span>
-        <span>xxxxxxxxxx</span>
-    </div>
-
-    <div class="catatan-item">
-        <span>Total Pesanan (xxx lembar)</span>
-        <span>Rp. xxxxx,xx</span>
-    </div>
-
-</div>
-
-<!-- METODE PEMBAYARAN -->
-<div class="payment">
-
-    <h4>Metode Pembayaran</h4>
-
-    <select>
-        <option value="">Pilih Metode Pembayaran</option>
-        <option value="bca">BCA</option>
-        <option value="bri">BRI</option>
-        <option value="dana">DANA</option>
-        <option value="gopay">GoPay</option>
-        <option value="mandiri">Mandiri</option>
-    </select>
-
-</div>
-
-<!-- BOTTOM BAR -->
-<div class="checkout-bar">
-    <div class="total">
-        <p>Total Pembayaran</p>
-        <span>Rp. XXX.XXX</span>
-    </div>
-
-    <button onclick="goFinish()">Checkout</button>
 </div>
 
 <script>

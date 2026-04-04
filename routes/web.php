@@ -52,3 +52,12 @@ Route::get('/information', function () {
 Route::get('/checkout', function () {
     return view('page.checkout');
 });
+
+Route::get('/konfirmasi', function () {
+    return view('page.confirm');
+});
+
+Route::post('/logoutconfirm', function () {
+    Auth::logout();
+    return redirect('/home');
+})->name('logoutconfirm');

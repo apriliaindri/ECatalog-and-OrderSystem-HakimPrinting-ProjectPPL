@@ -3,7 +3,6 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-/* HEADER */
 .header {
     display: flex;
     align-items: center;
@@ -20,7 +19,6 @@ body {
     width: 60px;
 }
 
-/* BACKGROUND LAYER */
 .bg {
     position: relative;
 }
@@ -40,17 +38,15 @@ body {
     background: #e5c1c1;
 }
 
-/* CARD FLOATING DI TENGAH */
 .card-container {
     position: absolute;
-    top: 50%;              /* posisi tengah layar */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* benar-benar center */
+    transform: translate(-50%, -50%);
     z-index: 3;
     margin-top: 275px;
 }
 
-/* CARD */
 .card {
     background: white;
     margin-top: 100px;
@@ -60,7 +56,6 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* FORM */
 .form-group {
     margin-bottom: 15px;
 }
@@ -69,7 +64,6 @@ body {
     font-size: 14px;
 }
 
-/* INPUT BOX */
 .input-box {
     display: flex;
     align-items: center;
@@ -90,7 +84,7 @@ body {
     width: 100%;
     font-size: 14px;
 }
-/* BUTTON */
+
 .btn {
     display: flex;
     justify-content: center;

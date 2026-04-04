@@ -10,60 +10,49 @@
 
 <div class="container">
 
-    <!-- LEFT IMAGE -->
+    {{-- LEFT IMAGE --}}
     <div class="left">
         <img src="{{ asset('images/img2.jpeg') }}">
     </div>
 
-    <!-- RIGHT FORM -->
+    {{-- RIGHT FORM --}}
     <div class="right">
         <h2>Sign Up</h2>
 
-        <form onsubmit="handleSignup(event)" novalidate>
-    @csrf
+        <form action="/signup" method="POST">
+            @csrf
 
-    <label>Nama Lengkap</label>
-    <div class="input-group">
-        <span>👤</span>
-        <input type="text" name="name">
-    </div>
+            {{-- NAMA --}}
+            <label>Nama Lengkap</label>
+            <div class="input-group">
+                <span>👤</span>
+                <input type="text" name="name" required>
+            </div>
 
-    <label>Email</label>
-    <div class="input-group">
-        <span>✉️</span>
-        <input type="email" name="email">
-    </div>
+            {{-- EMAIL --}}
+            <label>Email</label>
+            <div class="input-group">
+                <span>✉️</span>
+                <input type="email" name="email" required>
+            </div>
 
-    <label>Password</label>
-    <div class="input-group">
-        <span>🔒</span>
-        <input type="password" name="password">
-    </div>
+            {{-- PASSWORD --}}
+            <label>Password</label>
+            <div class="input-group">
+                <span>🔒</span>
+                <input type="password" name="password" required>
+            </div>
 
-    <button type="submit">Sign Up</button>
+            <button type="submit">Sign Up</button>
 
-    <p class="login">
-        Sudah memiliki akun? <a href="/signin1">Sign In</a>
-    </p>
-</form>
+            <p class="login">
+                Sudah memiliki akun? <a href="/signin1">Sign In</a>
+            </p>
+        </form>
+
     </div>
 
 </div>
-
-<script>
-function handleSignup(e) {
-    e.preventDefault(); // biar tidak reload
-
-    // ambil data (opsional)
-    const name = document.querySelector('[name="name"]').value;
-
-    // kasih notifikasi
-    alert("Akun berhasil dibuat, silakan login " + name);
-
-    // redirect ke halaman sign in
-   window.location.href = "/signin1";
-}
-</script>
 
 </body>
 </html>

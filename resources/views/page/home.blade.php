@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+{{-- NAVBAR --}}
 <nav class="navbar">
     <img src="{{ asset('images/logo.png') }}" class="logo">
     <ul>
@@ -20,7 +20,7 @@
     </ul>
 </nav>
 
-<!-- HERO -->
+{{-- HERO --}}
 <section class="hero section-pink" id="hero">
     <div class="hero-text">
         <h1>Selamat Datang Di <br> Hakim Printing</h1>
@@ -28,7 +28,7 @@
     <img src="{{ asset('images/img1.jpeg') }}">
 </section>
 
-<!-- ABOUT -->
+{{-- ABOUT --}}
 <section class="about section-white" id="about">
     <img src="{{ asset('images/img2.jpeg') }}">
     <div>
@@ -37,30 +37,25 @@
     </div>
 </section>
 
-
-
-<!-- PRODUCT PINK -->
 <section class="product section-pink" id="product">
     <h2>Product</h2>
 
     <div class="grid">
 
         <div class="item">
-    <a href="/product/1#detail">
-        <div class="card-img">
-            <img src="{{ asset('images/img2.jpeg') }}">
+            <a href="/product/1#detail">
+                <div class="card-img">
+                    <img src="{{ asset('images/img2.jpeg') }}">
+                </div>
+            </a>
+
+            <h3>Produk A</h3>
+            <p>Lorem ipsum</p>
+            <p class="price">Rp 20.000</p>
+            <a href="/order/1">
+                <button>Pesan</button>
+            </a>
         </div>
-    </a>
-
-    <h3>Produk A</h3>
-    <p>Lorem ipsum</p>
-    <p class="price">Rp 20.000</p>
-
-    <!-- PESAN -->
-    <a href="/order/1">
-        <button>Pesan</button>
-    </a>
-</div>
 
         <div class="item">
             <a href="/product/2#detail">
@@ -71,7 +66,9 @@
             <h3>Produk B</h3>
             <p>Lorem ipsum dolor sit amet</p>
             <p class="price">Rp 20.000,00</p>
-            <button>Pesan</button>
+            <a href="/order/2">
+                <button>Pesan</button>
+            </a>
         </div>
 
         <div class="item">
@@ -83,7 +80,9 @@
             <h3>Produk C</h3>
             <p>Lorem ipsum dolor sit amet</p>
             <p class="price">Rp 20.000,00</p>
-            <button>Pesan</button>
+            <a href="/order/3">
+                <button>Pesan</button>
+            </a>
         </div>
 
         <div class="item">
@@ -95,7 +94,9 @@
             <h3>Produk D</h3>
             <p>Lorem ipsum dolor sit amet</p>
             <p class="price">Rp 20.000,00</p>
-            <button>Pesan</button>
+            <a href="/order/4">
+                <button>Pesan</button>
+            </a>
         </div>
 
         <div class="item">
@@ -107,82 +108,93 @@
             <h3>Produk E</h3>
             <p>Lorem ipsum dolor sit amet</p>
             <p class="price">Rp 20.000,00</p>
-            <button>Pesan</button>
+            <a href="/order/5">
+                <button>Pesan</button>
+            </a>
         </div>
 
     </div>
 </section>
 
-<!-- PRODUCT WHITE -->
-<section class="product section-pink" id="product">
+<section class="product section-pink">
 
     <div class="grid">
 
-       <div class="item">
-    <a href="/product/6#detail">
-        <div class="card-img">
-            <img src="{{ asset('images/img2.jpeg') }}">
+        <div class="item">
+            <a href="/product/6#detail">
+                <div class="card-img">
+                    <img src="{{ asset('images/img2.jpeg') }}">
+                </div>
+            </a>
+            <h3>Produk F</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p class="price">Rp 25.000,00</p>
+            <a href="/order/6">
+                <button>Pesan</button>
+            </a>
         </div>
-    </a>
-    <h3>Produk F</h3>
-    <p>Lorem ipsum dolor sit amet</p>
-    <p class="price">Rp 25.000,00</p>
-    <button>Pesan</button>
-</div>
 
-               <div class="item">
-    <a href="/product/7#detail">
-        <div class="card-img">
-            <img src="{{ asset('images/img2.jpeg') }}">
+        <div class="item">
+            <a href="/product/7#detail">
+                <div class="card-img">
+                    <img src="{{ asset('images/img2.jpeg') }}">
+                </div>
+            </a>
+            <h3>Produk F</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p class="price">Rp 25.000,00</p>
+            <a href="/order/7">
+                <button>Pesan</button>
+            </a>
         </div>
-    </a>
-    <h3>Produk F</h3>
-    <p>Lorem ipsum dolor sit amet</p>
-    <p class="price">Rp 25.000,00</p>
-    <button>Pesan</button>
-</div>
 
-               <div class="item">
-    <a href="/product/8#detail">
-        <div class="card-img">
-            <img src="{{ asset('images/img2.jpeg') }}">
+        <div class="item">
+            <a href="/product/8#detail">
+                <div class="card-img">
+                    <img src="{{ asset('images/img2.jpeg') }}">
+                </div>
+            </a>
+            <h3>Produk F</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p class="price">Rp 25.000,00</p>
+            <a href="/order/8">
+                <button>Pesan</button>
+            </a>
         </div>
-    </a>
-    <h3>Produk F</h3>
-    <p>Lorem ipsum dolor sit amet</p>
-    <p class="price">Rp 25.000,00</p>
-    <button>Pesan</button>
-</div>
 
-               <div class="item">
-    <a href="/product/9#detail">
-        <div class="card-img">
-            <img src="{{ asset('images/img2.jpeg') }}">
+        <div class="item">
+            <a href="/product/9#detail">
+                <div class="card-img">
+                    <img src="{{ asset('images/img2.jpeg') }}">
+                </div>
+            </a>
+            <h3>Produk F</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p class="price">Rp 25.000,00</p>
+            <a href="/order/9">
+                <button>Pesan</button>
+            </a>
         </div>
-    </a>
-    <h3>Produk F</h3>
-    <p>Lorem ipsum dolor sit amet</p>
-    <p class="price">Rp 25.000,00</p>
-    <button>Pesan</button>
-</div>
 
-              <div class="item">
-    <a href="/product/10#detail">
-        <div class="card-img">
-            <img src="{{ asset('images/img2.jpeg') }}">
+        <div class="item">
+            <a href="/product/10#detail">
+                <div class="card-img">
+                    <img src="{{ asset('images/img2.jpeg') }}">
+                </div>
+            </a>
+            <h3>Produk F</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p class="price">Rp 25.000,00</p>
+            <a href="/order/10">
+                <button>Pesan</button>
+            </a>
         </div>
-    </a>
-    <h3>Produk F</h3>
-    <p>Lorem ipsum dolor sit amet</p>
-    <p class="price">Rp 25.000,00</p>
-    <button>Pesan</button>
-</div>
 
     </div>
 
 </section>
 
-<!-- CONTACT -->
+{{-- CONTACT --}}
 <section class="contact section-pink" id="contact">
     <div class="map">
         <iframe

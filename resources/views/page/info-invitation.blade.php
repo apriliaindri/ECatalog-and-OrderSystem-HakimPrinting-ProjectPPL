@@ -8,128 +8,110 @@
 </head>
 <body>
 
-<!-- HEADER -->
+{{-- HEADER --}}
 <div class="header">
     <img src="{{ asset('images/logo.png') }}">
     <h2>Informasi Pesanan</h2>
 </div>
 
-<!-- BACKGROUND -->
+{{-- BACKGROUND --}}
 <div class="bg">
     <div class="pink-top"></div>
     <div class="white-middle"></div>
     <div class="pink-bottom"></div>
 </div>
 
-<!-- CARD -->
+{{-- CARD --}}
 <div class="card-container">
     <div class="card">
-         <form action="/checkout" method="GET">
 
-            <!-- NAMA -->
+        <form action="/checkout" method="GET">
+
             <div class="form-group">
                 <label>Nama Lengkap Mempelai Pria</label>
                 <div class="input-box">
-                    <i class="fa fa-user"></i>
-                    <input type="text">
+                    <input type="text" name="pria_nama">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Alamat Mempelai Pria</label>
                 <div class="input-box">
-                    <i class="fa fa-whatsapp"></i>
-                    <input type="text">
+                    <input type="text" name="pria_alamat">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Nama Orang Tua Mempelai Pria</label>
                 <div class="input-box">
-                    <i class="fa fa-home"></i>
-                    <input type="text">
+                    <input type="text" name="pria_ortu">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Nama Lengkap Mempelai Wanita</label>
                 <div class="input-box">
-                    <i class="fa fa-user"></i>
-                    <input type="text">
+                    <input type="text" name="wanita_nama">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Alamat Mempelai Wanita</label>
                 <div class="input-box">
-                    <i class="fa fa-whatsapp"></i>
-                    <input type="text">
+                    <input type="text" name="wanita_alamat">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Nama Orang Tua Mempelai Wanita</label>
                 <div class="input-box">
-                    <i class="fa fa-home"></i>
-                    <input type="text">
+                    <input type="text" name="wanita_ortu">
                 </div>
             </div>
 
-                        <div class="form-group">
+            <div class="form-group">
                 <label>Tanggal Akad (Waktu Akad)</label>
                 <div class="input-box">
-                    <i class="fa fa-user"></i>
-                    <input type="text">
+                    <input type="text" name="akad_tanggal">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Lokasi Akad</label>
                 <div class="input-box">
-                    <i class="fa fa-whatsapp"></i>
-                    <input type="text">
+                    <input type="text" name="akad_lokasi">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Tanggal Resepsi (Waktu Resepsi)</label>
                 <div class="input-box">
-                    <i class="fa fa-home"></i>
-                    <input type="text">
+                    <input type="text" name="resepsi_tanggal">
                 </div>
             </div>
 
-                        <div class="form-group">
+            <div class="form-group">
                 <label>Lokasi Resepsi</label>
                 <div class="input-box">
-                    <i class="fa fa-user"></i>
-                    <input type="text">
+                    <input type="text" name="resepsi_lokasi">
                 </div>
             </div>
 
-                        <div class="form-group">
+            <div class="form-group">
                 <label>Quotes (Opsional)</label>
                 <div class="input-box">
-                    <i class="fa fa-user"></i>
-                    <input type="text">
+                    <input type="text" name="quotes">
                 </div>
             </div>
+            
+            <div class="btn">
+                <button type="submit">Checkout</button>
+            </div>
 
-        <div class="btn">
-            <button onclick="goNext()">> Checkout</button>
-        </div>
+        </form>
 
     </div>
 </div>
-
-<script>
-function goCheckout(e) {
-    e.preventDefault(); // cegah reload
-
-    // redirect ke halaman checkout
-    window.location.href = "/checkout";
-}
-</script>
 
 </body>
 </html>

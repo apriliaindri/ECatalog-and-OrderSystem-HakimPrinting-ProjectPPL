@@ -8,19 +8,19 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+{{-- NAVBAR --}}
 <nav class="navbar">
     <img src="{{ asset('images/logo.png') }}" class="logo">
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/#about">About Us</a></li>
-    <li><a href="/#product">Product</a></li>
-    <li><a href="/#contact">Contact</a></li>
-    <li>Sign Up</li>
-</ul>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About Us</a></li>
+        <li><a href="/#product">Product</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li>Sign Up</li>
+    </ul>
 </nav>
 
-<!-- HERO -->
+{{-- HERO --}}
 <section class="hero" id="hero">
     <div class="hero-text">
         <h1>Selamat Datang Di <br> Hakim Printing</h1>
@@ -28,7 +28,7 @@
     <img src="{{ asset('images/img1.jpeg') }}">
 </section>
 
-<!-- ABOUT -->
+{{-- ABOUT --}}
 <section class="about" id="about">
     <img src="{{ asset('images/img2.jpeg') }}">
     <div>
@@ -37,29 +37,28 @@
     </div>
 </section>
 
-
-<!-- PRODUCT DETAIL -->
+{{-- PRODUCT DETAIL --}}
 <section class="detail-wrapper" id="detail">
 
-    <!-- JUDUL DI LUAR CARD -->
+    {{-- JUDUL DI LUAR CARD --}}
     <h2 class="section-title">Detail Product</h2>
 
     <div class="detail-card">
 
-        <!-- HEADER -->
+        {{-- HEADER --}}
         <div class="detail-header">
             <h2>Product A</h2>
             <a href="/" class="close-btn">✕</a>
         </div>
 
-        <!-- IMAGE -->
+        {{-- IMAGE PRODUK --}}
         <div class="detail-images">
             <img src="{{ asset('images/img2.jpeg') }}">
             <img src="{{ asset('images/img2.jpeg') }}">
             <img src="{{ asset('images/img2.jpeg') }}">
         </div>
 
-        <!-- DESKRIPSI -->
+        {{-- DESKRIPSI --}}
         <div class="detail-desc">
             <h3>Deskripsi:</h3>
 
@@ -69,16 +68,16 @@
             <p>Jumlah Halaman: 1 Lembar & Amplop</p>
             <p>Minimal Order: 100 lembar</p>
 
-             <a href="/order/{{ $id }}">
-            <button>Pesan</button>
-            </a
+            <a href="/order/{{ $id }}">
+                <button>Pesan</button>
+            </a>
         </div>
 
     </div>
 
 </section>
 
-<!-- CONTACT -->
+{{-- CONTACT --}}
 <section class="contact" id="contact">
     <div class="map">
         <iframe
@@ -99,7 +98,6 @@
         <p>✉️ email@gmail.com</p>
     </div>
 </section>
-
 
 </body>
 </html>

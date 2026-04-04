@@ -7,7 +7,6 @@ body {
     margin: 0;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,12 +21,12 @@ body {
 }
 
 .navbar a {
-    text-decoration: none; /* hilangkan garis */
-    color: black;          /* samakan dengan teks biasa */
+    text-decoration: none;
+    color: black;
 }
 
 section:nth-of-type(odd) {
-    background-color: #d8bcbc; /* pink */
+    background-color: #d8bcbc;
 }
 
 section:nth-of-type(even) {
@@ -38,7 +37,6 @@ section:nth-of-type(even) {
     padding: 15px 10px;
 }
 
-/* HERO */
 .hero {
     display: flex;
     background: #d8bcbc;
@@ -56,7 +54,6 @@ section:nth-of-type(even) {
     width: 50%;
 }
 
-/* ABOUT */
 .about {
     display: flex;
     padding: 40px;
@@ -83,7 +80,6 @@ section:nth-of-type(even) {
     width: 50%;
 }
 
-/* PRODUCT */
 .product {
     padding: 40px 20px;
     text-align: center;
@@ -103,26 +99,23 @@ section:nth-of-type(even) {
     margin-top: 5px;
 }
 
-/* GRID 5 SEJAJAR */
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
-    max-width: 1000px;   /* batasi lebar */
-    margin: 0 auto;      /* center grid */
+    max-width: 1000px;
+    margin: 0 auto;
 }
-/* ITEM */
+
 .item {
     width: 100%;
     text-align: left;
 }
 
-/* FRAME GAMBAR */
 .card-img {
     border: 2px solid #8b2e2e;
     border-radius: 10px;
     padding: 15px;
-    gap: 50px;
     width: 100%;
 }
 
@@ -131,7 +124,6 @@ section:nth-of-type(even) {
     height: auto;
 }
 
-/* TEXT */
 .item h3 {
     margin-top: 10px;
     font-size: 16px;
@@ -154,18 +146,12 @@ section:nth-of-type(even) {
     padding: 5px 12px;
     border-radius: 6px;
     font-size: 12px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     cursor: pointer;
 }
 
-/* CONTACT */
 .contact {
     display: flex;
     background: #d8bcbc;
-    display: flex;
     padding: 40px;
     gap: 20px;
     align-items: center;
@@ -174,7 +160,7 @@ section:nth-of-type(even) {
 .map {
     display: flex;
     justify-content: center;
-    margin-left: 100px; /* bikin tengah horizontal */
+    margin-left: 100px;
 }
 
 .contact h2 {
@@ -187,10 +173,8 @@ section:nth-of-type(even) {
     margin-left: 100px;
 }
 
-/* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
-    /* NAVBAR */
     .navbar {
         flex-direction: column;
         padding: 10px;
@@ -203,7 +187,6 @@ section:nth-of-type(even) {
         align-items: center;
     }
 
-    /* HERO */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -219,7 +202,6 @@ section:nth-of-type(even) {
         width: 100%;
     }
 
-    /* ABOUT */
     .about {
         flex-direction: column;
         text-align: center;
@@ -233,13 +215,11 @@ section:nth-of-type(even) {
         width: 100%;
     }
 
-    /* PRODUCT */
     .grid {
-        grid-template-columns: repeat(2, 1fr); /* jadi 2 kolom */
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    /* CONTACT */
     .contact {
         flex-direction: column;
         text-align: center;

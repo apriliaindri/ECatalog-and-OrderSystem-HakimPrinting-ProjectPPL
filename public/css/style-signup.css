@@ -1,17 +1,15 @@
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
-    background: white; /* full putih */
+    background: white;
 }
 
-/* CONTAINER FULL */
 .container {
     display: flex;
     height: 100vh;
-    overflow: hidden; /* cegah scroll */
+    overflow: hidden;
 }
 
-/* LEFT IMAGE */
 .left {
     width: 50%;
 }
@@ -22,18 +20,16 @@ body {
     object-fit: cover;
 }
 
-/* RIGHT FORM */
 .right {
     margin-left: 100px;
     width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* biar form di tengah vertikal */
+    justify-content: center;
     padding: 60px;
     background: white;
 }
 
-/* TITLE */
 .right h2 {
     text-align: center;
     margin-top: 10px;
@@ -41,7 +37,6 @@ body {
     font-size: 45px;
 }
 
-/* INPUT */
 label {
     font-size: 15px;
 }
@@ -66,7 +61,6 @@ label {
     width: 100%;
 }
 
-/* BUTTON */
 button {
     width: 100px;
     background: #8b2e2e;
@@ -77,13 +71,8 @@ button {
     border-radius: 15px;
     margin-top: 10px;
     cursor: pointer;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
 }
 
-/* LOGIN TEXT */
 .login {
     text-align: center;
     margin-top: 30px;
