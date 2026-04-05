@@ -93,8 +93,8 @@ body {
 .menu-catalog {
      text-align: center;
     cursor: pointer;
-    text-decoration: none;   /* hilangkan underline */
-    color: black;            /* biar teks tidak biru */
+    text-decoration: none;
+    color: black;        
 }
 
 .menu-item p {
