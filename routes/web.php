@@ -59,3 +59,33 @@ Route::post('/logoutconfirm', function () {
     Auth::logout();
     return redirect('/');
 })->name('logoutconfirm');
+
+Route::get('/user-page', function () {
+    return view('page.user-page');
+})->name('user-page');
+
+Route::get('/diproses', function () {
+    return view('page.processed');
+});
+
+Route::get('/dikirim', function () {
+    return view('page.shipping');
+});
+
+Route::get('/selesai', function () {
+  return view('page.history');
+});
+
+Route::get('/', function () {
+    return view('page.home');
+});
+
+Route::post('/logoutprocessed', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('logoutprocessed');
+
+Route::post('/logouthistory', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('logouthistory');

@@ -14,7 +14,7 @@
     <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#product">Product</a></li>
+       <li><a href="{{ url('/') }}#product">Product</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="/signup">Sign Up</a></li>
     </ul>

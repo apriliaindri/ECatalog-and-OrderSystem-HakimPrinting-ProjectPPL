@@ -19,40 +19,48 @@
     <div class="right">
         <h2>Sign Up</h2>
 
-        <form action="/signup" method="POST">
-            @csrf
+        <form onsubmit="handleSignup(event)" novalidate>
+    @csrf
 
-            {{-- NAMA --}}
-            <label>Nama Lengkap</label>
-            <div class="input-group">
-                <span>👤</span>
-                <input type="text" name="name" required>
-            </div>
+    <label>Nama Lengkap</label>
+    <div class="input-group">
+        <span>👤</span>
+        <input type="text" name="name">
+    </div>
 
-            {{-- EMAIL --}}
-            <label>Email</label>
-            <div class="input-group">
-                <span>✉️</span>
-                <input type="email" name="email" required>
-            </div>
+    <label>Email</label>
+    <div class="input-group">
+        <span>✉️</span>
+        <input type="email" name="email">
+    </div>
 
-            {{-- PASSWORD --}}
-            <label>Password</label>
-            <div class="input-group">
-                <span>🔒</span>
-                <input type="password" name="password" required>
-            </div>
+    <label>Password</label>
+    <div class="input-group">
+        <span>🔒</span>
+        <input type="password" name="password">
+    </div>
 
-            <button type="submit">Sign Up</button>
+    <button type="submit">Sign Up</button>
 
-            <p class="login">
-                Sudah memiliki akun? <a href="/signin1">Sign In</a>
-            </p>
+    <p class="login">
+        Sudah memiliki akun? <a href="/signin1">Sign In</a>
+    </p>
+</form>
         </form>
 
     </div>
 
-</div>
+    <script>
+function handleSignup(e) {
+    e.preventDefault();
+
+    const name = document.querySelector('[name="name"]').value;
+
+    alert("Akun berhasil dibuat, silakan login " + name);
+
+   window.location.href = "/signin1";
+}
+</script>
 
 </body>
 </html>

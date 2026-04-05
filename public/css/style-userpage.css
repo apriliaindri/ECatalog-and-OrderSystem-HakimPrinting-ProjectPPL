@@ -64,15 +64,37 @@ body {
 .menu-item {
     text-align: center;
     cursor: pointer;
+        text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .menu-item img {
-    width: 40px;
+    width: 45px;
+    height: 45px;
 }
 
-.menu-sent img {
+.menu-shipping img,
+.menu-finished img{
     width: 45px;
     height: 37px;
+}
+
+.menu-catalog img{
+    width: 43px;
+    height: 38px;
+}
+
+.menu-shipping,
+.menu-finished,
+.menu-catalog {
+     text-align: center;
+    cursor: pointer;
+    text-decoration: none;   /* hilangkan underline */
+    color: black;            /* biar teks tidak biru */
 }
 
 .menu-item p {

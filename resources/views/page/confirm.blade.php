@@ -36,7 +36,9 @@
         <p>Dan akan segera diproses sesuai antrian :)</p>
 
         {{-- Link cek status --}}
-        <a href="#" class="link">Cek status pesanan Anda di sini</a>
+        <a href="{{ route('user-page') }}" class="link">
+    Cek status pesanan Anda di sini
+</a>
     </div>
 
 </section>

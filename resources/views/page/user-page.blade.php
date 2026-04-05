@@ -35,25 +35,27 @@
 {{-- MENU --}}
 <div class="user-section">
     <div class="menu">
-        <div class="menu-item">
+
+        <a href="/diproses" class="menu-item">
             <img src="{{ asset('images/processed.png') }}">
             <p>Diproses</p>
-        </div>
+        </a>
 
-        <div class="menu-item">
+        <a href="/dikirim" class="menu-shipping">
             <img src="{{ asset('images/shipping.png') }}">
             <p>Dikirim</p>
-        </div>
+        </a>
 
-        <div class="menu-item">
+        <a href="/selesai" class="menu-finished">
             <img src="{{ asset('images/finished.png') }}">
             <p>Selesai</p>
-        </div>
+        </a>
 
-        <div class="menu-item">
+        <a href="/" class="menu-catalog">
             <img src="{{ asset('images/catalog.png') }}">
             <p>Katalog</p>
-        </div>
+        </a>
+
     </div>
 </div>
 
