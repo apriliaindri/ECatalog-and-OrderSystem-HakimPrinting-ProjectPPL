@@ -4,7 +4,6 @@ body {
     background: white;
 }
 
-/* HEADER */
 .header {
     display: flex;
     align-items: center;
@@ -20,12 +19,10 @@ body {
     margin: 0;
 }
 
-/* CONTENT */
 .content {
     padding-bottom: 100px;
 }
 
-/* ALAMAT */
 .alamat {
     background: white;
     padding: 30px;
@@ -48,13 +45,11 @@ body {
     color: black;
 }
 
-/* SECTION PINK */
 .section-pink {
     background: #e5c1c1;
     padding: 15px;
 }
 
-/* PRODUK */
 .produk-item {
     display: flex;
     padding: 12px 0;
@@ -62,20 +57,27 @@ body {
 }
 
 .produk-img img {
-    width: 70px;
-    height: 70px;
-    border-radius: 8px;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
     object-fit: cover;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 0 0 5px 0;
+    margin-left: 13px;
 }
 
 .produk-detail {
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .produk-detail h4 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    font-style: bold;
 }
 
 .harga {
@@ -117,7 +119,6 @@ body {
     background: white;
 }
 
-/* CHECKOUT BAR */
 .checkout-bar {
     position: fixed;
     bottom: 0;
@@ -155,7 +156,6 @@ body {
     background: #6f2222;
 }
 
-/* INFORMASI */
 .informasi {
     background: white;
     padding: 30px;
@@ -183,7 +183,6 @@ body {
     color: #999;
 }
 
-/* PENGIRIMAN */
 .pengiriman {
     background: #e5c1c1;
     padding: 30px;
@@ -215,7 +214,6 @@ body {
     font-weight: 500;
 }
 
-/* CATATAN */
 .catatan {
     background: white;
     padding: 30px;
@@ -243,7 +241,6 @@ body {
     color: #333;
 }
 
-/* ICON TITLE */
 .title-icon {
     display: flex;
     align-items: center;

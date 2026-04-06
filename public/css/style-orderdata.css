@@ -3,20 +3,21 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-.header {
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 15px 50px;
+    height: 70px;
     background: white;
-    padding: 15px;
-    position: relative;
-    z-index: 2;
+    box-sizing: border-box;
 }
 
-.header img {
-    position: absolute;
-    left: 20px;
-    width: 60px;
+.navbar h2 {
+    margin: 0;
+    font-size: 20px;
+    flex: 1;
+    text-align: center;
 }
 
 .bg {

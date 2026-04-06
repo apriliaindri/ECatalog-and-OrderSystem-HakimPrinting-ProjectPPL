@@ -3,20 +3,21 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-.header {
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 15px 50px;
+    height: 70px;
     background: white;
-    padding: 15px;
-    position: relative;
-    z-index: 2;
+    box-sizing: border-box;
 }
 
-.header img {
-    position: absolute;
-    left: 20px;
-    width: 60px;
+.navbar h2 {
+    margin: 0;
+    font-size: 20px;
+    flex: 1;
+    text-align: center;
 }
 
 .bg {
@@ -49,11 +50,16 @@ body {
 
 .card {
     background: white;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 30px;
     border-radius: 10px;
     width: 350px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .form-group {

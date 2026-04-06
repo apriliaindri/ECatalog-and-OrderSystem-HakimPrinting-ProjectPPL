@@ -9,7 +9,7 @@
 <body>
 
 {{-- HEADER --}}
-<div class="header">
+<div class="navbar">
     <img src="{{ asset('images/logo.png') }}">
     <h2>Informasi Pesanan</h2>
 </div>
@@ -103,7 +103,7 @@
                     <input type="text" name="quotes">
                 </div>
             </div>
-            
+
             <div class="btn">
                 <button type="submit">Checkout</button>
             </div>

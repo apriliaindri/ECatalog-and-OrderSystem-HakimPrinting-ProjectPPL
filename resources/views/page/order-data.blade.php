@@ -14,7 +14,7 @@
 <body>
 
 {{-- HEADER --}}
-<div class="header">
+<div class="navbar">
     <img src="{{ asset('images/logo.png') }}">
     <h2>Data Pesanan</h2>
 </div>

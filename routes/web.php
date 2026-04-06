@@ -89,3 +89,13 @@ Route::post('/logouthistory', function () {
     Auth::logout();
     return redirect('/');
 })->name('logouthistory');
+
+Route::post('/logoutuserpage', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('logoutuserpage');
+
+Route::post('/logoutshipping', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('logoutshipping');

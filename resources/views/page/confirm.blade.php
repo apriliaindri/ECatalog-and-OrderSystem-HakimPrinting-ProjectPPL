@@ -16,10 +16,13 @@
     <img src="{{ asset('images/logo.png') }}" class="logo">
 
     {{-- Logout --}}
-    <form action="{{ route('logoutconfirm') }}" method="POST">
-        @csrf
-        <button type="submit" class="logout-link">Sign Out</button>
-    </form>
+<form action="{{ route('logoutconfirm') }}" method="POST">
+    @csrf
+    <button type="submit" class="logout-link">
+        <img src="{{ asset('images/logout.png') }}" class="logout-icon">
+        Sign Out
+    </button>
+</form>
 </nav>
 
 {{-- HERO SECTION --}}

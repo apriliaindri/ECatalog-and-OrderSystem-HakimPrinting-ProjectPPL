@@ -33,7 +33,7 @@
     <img src="{{ asset('images/img2.jpeg') }}">
     <div>
         <h2>Hakim Printing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Percetakan Undangan Pernikahan</p>
     </div>
 </section>
 
@@ -208,12 +208,25 @@
     </div>
 
     <div>
-        <h2>Alamat & Kontak</h2>
-        <p>Hakim Printing</p>
-        <p>📍 Kalimati, Tirtomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571</p>
-        <p>📞 +628xxx</p>
-        <p>✉️ email@gmail.com</p>
-    </div>
+    <h2>Alamat & Kontak</h2>
+    <p class="contact-item">
+    <img src="{{ asset('images/location.png') }}" class="icon">
+    <span>
+        Kalimati, Tirtomartani, Kec. Kalasan, Kabupaten Sleman,
+        Daerah Istimewa Yogyakarta 55571
+    </span>
+</p>
+
+<p class="contact-item">
+    <img src="{{ asset('images/whatsapp.png') }}" class="icon">
+    <span>+62 896-1294-622</span>
+</p>
+
+<p class="contact-item">
+    <img src="{{ asset('images/email.png') }}" class="icon">
+    <span>email@gmail.com</span>
+</p>
+</div>
 </section>
 
 </body>

@@ -15,10 +15,13 @@
     <h2>Pesanan Diproses</h2>
 
     {{-- SIGN OUT --}}
-    <form action="/logoutprocessed" method="POST">
-        @csrf
-        <button type="submit" class="logout-btn">Sign Out</button>
-    </form>
+    <form action="{{ route('logoutprocessed') }}" method="POST">
+    @csrf
+    <button type="submit" class="logout-link">
+        <img src="{{ asset('images/logout.png') }}" class="logout-icon">
+        Sign Out
+    </button>
+</form>
 </div>
 
 {{-- LIST PESANAN --}}

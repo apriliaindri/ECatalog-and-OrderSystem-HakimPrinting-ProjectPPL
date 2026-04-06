@@ -14,10 +14,13 @@
 
     <h2>Pesanan yang Dikirim</h2>
 
-    <form action="/logout" method="POST">
-        @csrf
-        <button class="logout-btn">Sign Out</button>
-    </form>
+<form action="{{ route('logoutshipping') }}" method="POST">
+    @csrf
+    <button type="submit" class="logout-link">
+        <img src="{{ asset('images/logout.png') }}" class="logout-icon">
+        Sign Out
+    </button>
+</form>
 </div>
 
 {{-- LIST PESANAN --}}

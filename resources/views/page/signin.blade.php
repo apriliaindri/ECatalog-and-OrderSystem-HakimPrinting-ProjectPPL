@@ -21,17 +21,17 @@
         <form onsubmit="handleSignup(event)" novalidate>
             @csrf
 
-            <label>Email</label>
-            <div class="input-group">
-                <span>✉️</span>
-                <input type="email" name="email" required>
-            </div>
+<label>Email</label>
+<div class="input-group">
+    <img src="{{ asset('images/email.png') }}" class="icon">
+    <input type="email" name="email">
+</div>
 
-            <label>Password</label>
-            <div class="input-group">
-                <span>🔒</span>
-                <input type="password" name="password" required>
-            </div>
+<label>Password</label>
+<div class="input-group">
+    <img src="{{ asset('images/password.png') }}" class="icon">
+    <input type="password" name="password">
+</div>
 
             <button type="submit">Sign In</button>
 

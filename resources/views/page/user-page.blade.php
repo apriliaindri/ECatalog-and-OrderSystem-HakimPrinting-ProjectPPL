@@ -14,17 +14,13 @@
     <img src="{{ asset('images/logo.png') }}" class="logo">
 
     <h2>User Page</h2>
-
-    <ul>
-        <li>
-            <form action="/logout" method="POST">
-                @csrf
-                <button type="submit" style="background:none; border:none; cursor:pointer;">
-                    Sign Out
-                </button>
-            </form>
-        </li>
-    </ul>
+<form action="{{ route('logoutconfirm') }}" method="POST">
+    @csrf
+    <button type="submit" class="logout-link">
+        <img src="{{ asset('images/logout.png') }}" class="logout-icon">
+        Sign Out
+    </button>
+</form>
 </nav>
 
 {{-- GREETING --}}
@@ -72,13 +68,26 @@
         </iframe>
     </div>
 
-    <div class="info">
-        <h2>Alamat & Kontak</h2>
-        <p>Hakim Printing</p>
-        <p>📍 Kalimati, Tirtomartani, Kec. Kalasan, Sleman</p>
-        <p>📞 +628xxx</p>
-        <p>✉️ email@gmail.com</p>
-    </div>
+    <div>
+    <h2>Alamat & Kontak</h2>
+    <p class="contact-item">
+    <img src="{{ asset('images/location.png') }}" class="icon">
+    <span>
+        Kalimati, Tirtomartani, Kec. Kalasan, Kabupaten Sleman,
+        Daerah Istimewa Yogyakarta 55571
+    </span>
+</p>
+
+<p class="contact-item">
+    <img src="{{ asset('images/whatsapp.png') }}" class="icon">
+    <span>+62 896-1294-622</span>
+</p>
+
+<p class="contact-item">
+    <img src="{{ asset('images/email.png') }}" class="icon">
+    <span>email@gmail.com</span>
+</p>
+</div>
 </section>
 
 </body>

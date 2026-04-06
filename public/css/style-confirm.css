@@ -1,43 +1,27 @@
-
 body {
     margin: 0;
+        font-family: Poppins, sans-serif;
 }
 
-
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    padding: 15px 40px;
-    z-index: 1000;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 50px;
+    height: 70px;
+    background: white;
+    box-sizing: border-box;
 }
 
-.logout-btn {
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.3s;
+.navbar h2 {
+    margin: 0;
+    font-size: 20px;
+    flex: 1;
+    text-align: center;
 }
-
-.logout-btn:hover {
-    background: #333;
-}
-
-.logo {
-    height: 40px;
-}
-
 
 .hero {
-    height: 532px;
+    height: 462px;
 
     display: flex;
     justify-content: center;
@@ -45,7 +29,6 @@ body {
 
     padding-top: 100px;
 }
-
 
 .bubble {
     background: rgba(255, 182, 193, 0.416);
@@ -74,15 +57,18 @@ body {
 .logout-link {
     background: none;
     border: none;
-    margin-right: 70px;
+    margin-right: 5px;
 
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     cursor: pointer;
 
     text-decoration: none;
 }
 
-.logout-link:hover {
-    text-decoration: none;
+.logout-icon {
+    width: 18px;
+    height: 18px;
+    transform: translateY(3px);
+    margin-left: 5px;
 }

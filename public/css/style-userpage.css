@@ -10,33 +10,14 @@ body {
     padding: 15px 50px;
     height: 70px;
     background: white;
-    position: relative;
     box-sizing: border-box;
 }
 
-.logo {
-    width: 40px;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-}
-
 .navbar h2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     margin: 0;
     font-size: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
+    flex: 1;
+    text-align: center;
 }
 
 .greeting {
@@ -94,7 +75,7 @@ body {
      text-align: center;
     cursor: pointer;
     text-decoration: none;
-    color: black;        
+    color: black;
 }
 
 .menu-item p {
@@ -102,26 +83,69 @@ body {
 }
 
 .contact {
-    display: flex;
-    background: #e5c1c1;
-    padding: 40px;
-    gap: 30px;
+     display: flex;
     align-items: center;
+    background: #d8bcbc;
+    padding: 40px;
+    gap: 20px;
 }
 
 .map {
-    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
 }
 
-.info {
-    margin-left: 50px;
+.contact h2 {
+    margin-left: 1px;
+    font-size: 35px;
+    margin-top: 0;
 }
 
-.info h2 {
-    font-size: 30px;
+.contact div {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navbar a:hover {
     text-decoration: underline;
     color: #8b2e2e;
+}
+
+.logout-link {
+    background: none;
+    border: none;
+    margin-right: 5px;
+
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.logout-icon {
+    width: 18px;
+    height: 18px;
+    transform: translateY(3px);
+    margin-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;   /* center vertikal */
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.contact-item .icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.contact-item span {
+    line-height: 1.4;
 }

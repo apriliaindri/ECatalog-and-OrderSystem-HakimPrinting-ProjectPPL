@@ -22,23 +22,23 @@
         <form onsubmit="handleSignup(event)" novalidate>
     @csrf
 
-    <label>Nama Lengkap</label>
-    <div class="input-group">
-        <span>👤</span>
-        <input type="text" name="name">
-    </div>
+<label>Nama Lengkap</label>
+<div class="input-group">
+    <img src="{{ asset('images/user-icon.png') }}" class="icon">
+    <input type="text" name="name">
+</div>
 
-    <label>Email</label>
-    <div class="input-group">
-        <span>✉️</span>
-        <input type="email" name="email">
-    </div>
+<label>Email</label>
+<div class="input-group">
+    <img src="{{ asset('images/email.png') }}" class="icon">
+    <input type="email" name="email">
+</div>
 
-    <label>Password</label>
-    <div class="input-group">
-        <span>🔒</span>
-        <input type="password" name="password">
-    </div>
+<label>Password</label>
+<div class="input-group">
+    <img src="{{ asset('images/password.png') }}" class="icon">
+    <input type="password" name="password">
+</div>
 
     <button type="submit">Sign Up</button>
 

@@ -98,3 +98,10 @@ button {
         height: 250px;
     }
 }
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    object-fit: contain;
+}
