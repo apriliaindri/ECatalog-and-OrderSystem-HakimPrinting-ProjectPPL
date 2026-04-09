@@ -99,3 +99,51 @@ Route::post('/logoutshipping', function () {
     Auth::logout();
     return redirect('/');
 })->name('logoutshipping');
+
+Route::post('/logoutadminpage', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('logoutadminpage');
+
+Route::get('/tambah-produk', function () {
+    return view('admin.add-product');
+});
+
+Route::get('/diproses-admin', function () {
+    return view('admin.order-processed');
+});
+
+Route::get('/dikirim-admin', function () {
+    return view('admin.shipping-admin');
+});
+
+Route::get('history-admin', function () {
+    return view('admin.admin-history');
+});
+
+
+
+// Uji Coba FE
+Route::get('/login-admin', function () {
+    session(['role' => 'admin']);
+    return redirect('/admin');
+});
+
+Route::get('/login-user', function () {
+    session(['role' => 'user']);
+    return redirect('/');
+});
+
+Route::get('/logout', function () {
+    session()->forget('role');
+    return redirect('/');
+});
+
+Route::get('/admin', function () {
+
+    if (session('role') != 'admin') {
+        return redirect('/');
+    }
+
+    return view('admin.admin-page');
+});

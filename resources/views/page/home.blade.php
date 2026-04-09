@@ -16,7 +16,34 @@
         <li><a href="#about">About Us</a></li>
        <li><a href="{{ url('/') }}#product">Product</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="/signup">Sign Up</a></li>
+
+        {{-- ini buat ujicoba routing bagian front end, nanti tinggal diganti dikit aja kalo dh masukin role di db --}}
+        <@if(Auth::check() && Auth::user()->role == 'admin')
+    <li><a href="#">Halo, {{ Auth::user()->name }}</a></li>
+    <li><a href="#">Tambah Katalog</a></li>
+    <li><a href="/diproses">Diproses</a></li>
+    <li><a href="/dikirim">Dikirim</a></li>
+    <li><a href="/selesai">Daftar Pesanan</a></li>
+    <li>
+        <form action="/logout" method="POST">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
+    </li>
+
+@elseif(Auth::check())
+    <li><a href="#">Halo, {{ Auth::user()->name }}</a></li>
+    <li><a href="/user-page">Dashboard</a></li>
+    <li>
+        <form action="/logout" method="POST">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
+    </li>
+
+@else
+    <li><a href="/signup">Sign Up</a></li>
+@endif
     </ul>
 </nav>
 
