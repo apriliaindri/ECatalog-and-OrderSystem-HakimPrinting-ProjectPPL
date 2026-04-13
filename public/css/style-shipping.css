@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
+    background-color: #FDF8F0;
 }
 
 .header {
@@ -9,10 +10,9 @@ body {
     justify-content: space-between;
     padding: 15px 50px;
     height: 70px;
-    background: white;
-    position: relative;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .header h2 {
@@ -31,7 +31,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
@@ -106,7 +105,6 @@ body {
     position: absolute;
     left: -5px;
     top: 5px;
-
     width: 8px;
     height: 8px;
     background: #bbb;
@@ -126,25 +124,6 @@ body {
     margin: 0;
     font-size: 13px;
     color: #555;
-}
-
-.logout-link {
-    background: none;
-    border: none;
-    margin-right: 5px;
-
-    font-size: 16px;
-    color: black;
-    cursor: pointer;
-
-    text-decoration: none;
-}
-
-.logout-icon {
-    width: 18px;
-    height: 18px;
-    transform: translateY(3px);
-    margin-left: 5px;
 }
 
 .back {

@@ -14,13 +14,7 @@
 
     <h2>Pesanan yang Dikirim</h2>
 
-<form action="{{ route('logoutshipping') }}" method="POST">
-    @csrf
-    <button type="submit" class="logout-link">
-        <img src="{{ asset('images/logout.png') }}" class="logout-icon">
-        Sign Out
-    </button>
-</form>
+    <a href="{{ route('page.user-page') }}" class="back">Back</a>
 </div>
 
 {{-- LIST PESANAN --}}

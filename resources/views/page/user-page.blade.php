@@ -13,7 +13,7 @@
 <nav class="navbar">
     <img src="{{ asset('images/logo.png') }}" class="logo">
 
-    <h2>User Page</h2>
+    <h2>Halaman Pengguna</h2>
 <form action="{{ route('logoutconfirm') }}" method="POST">
     @csrf
     <button type="submit" class="logout-link">
@@ -60,8 +60,8 @@
     <div class="map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.473457428458!2d110.46122197457171!3d-7.73949849227904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5b0015672ad5%3A0xfc2cac214650f77e!2sHakim%20Printing!5e0!3m2!1sid!2sid!4v1774552938299!5m2!1sid!2sid"
-            width="300"
-            height="300"
+            width="200"
+            height="200"
             style="border:0;"
             allowfullscreen=""
             loading="lazy">
@@ -92,3 +92,4 @@
 
 </body>
 </html>
+

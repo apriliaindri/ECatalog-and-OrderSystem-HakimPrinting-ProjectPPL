@@ -9,7 +9,7 @@ body {
     align-items: center;
     padding: 15px 50px;
     height: 70px;
-    background: white;
+    background-color: #FDF8F0;
     box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .greeting {
-    background: #e5c1c1;
+background: #EBD1A0;
     padding: 30px;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .user-section {
-    background: white;
+    background-color: #FDF8F0;
     padding: 20px;
 }
 
@@ -56,6 +56,8 @@ body {
 .menu-item img {
     width: 45px;
     height: 45px;
+    object-fit: contain;
+    display: block;
 }
 
 .menu-shipping img,
@@ -82,33 +84,6 @@ body {
     margin-top: 10px;
 }
 
-.contact {
-     display: flex;
-    align-items: center;
-    background: #d8bcbc;
-    padding: 40px;
-    gap: 20px;
-}
-
-.map {
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
-}
-
-.contact h2 {
-    margin-left: 1px;
-    font-size: 35px;
-    margin-top: 0;
-}
-
-.contact div {
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .navbar a:hover {
     text-decoration: underline;
     color: #8b2e2e;
@@ -133,16 +108,43 @@ body {
     margin-left: 5px;
 }
 
+.contact {
+     display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+background: #EBD1A0;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-left: 1500px;
+}
+
+.contact h2 {
+    margin-left: 1px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.contact div {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .contact-item {
     display: flex;
-    align-items: center; 
-    gap: 12px;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
 .contact-item .icon {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     object-fit: contain;
 }
 

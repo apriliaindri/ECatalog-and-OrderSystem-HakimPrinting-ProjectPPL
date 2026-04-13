@@ -14,6 +14,7 @@ body {
     padding: 15px 50px;
     height: 70px;
     box-sizing: border-box;
+    background-color: #FDF8F0;
 }
 
 .navbar ul {
@@ -29,11 +30,12 @@ body {
 }
 
 section:nth-of-type(odd) {
-    background-color: #d8bcbc;
+        background: linear-gradient(to bottom, #FDF3D9, #F7E4B8, #EBD1A0, #DBC195);
+
 }
 
 section:nth-of-type(even) {
-    background-color: white;
+    background-color: #FDF8F0;
 }
 
 .signup {
@@ -42,15 +44,14 @@ section:nth-of-type(even) {
 
 .hero {
     display: flex;
-    background: #d8bcbc;
+    background: #FDF8F0;;
     align-items: center;
 }
 
 .hero-text {
     width: 50%;
-    margin-left: 50px;
+    margin-left: 85px;
     font-size: 24px;
-    font-weight: bold;
 }
 
 .hero img {
@@ -88,12 +89,12 @@ section:nth-of-type(even) {
     text-align: center;
 }
 
-.product.pink {
-    background: #d8bcbc;
+.product.cream {
+    background: #D9B87B;
 }
 
 .product.white {
-    background: white;
+    background: #FDF8F0;;
 }
 
 .product h2 {
@@ -116,8 +117,8 @@ section:nth-of-type(even) {
 }
 
 .card-img {
-    border: 2px solid #8b2e2e;
-    border-radius: 10px;
+    border: 2px solid #D9B87B;
+    border-radius: 12px;
     padding: 15px;
     width: 100%;
 }
@@ -143,19 +144,27 @@ section:nth-of-type(even) {
 }
 
 .item button {
-    background: #8b2e2e;
-    color: white;
+    background: #d6ae62;
+    color: #3a2c17;
     border: none;
-    padding: 5px 12px;
-    border-radius: 6px;
-    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.item button:hover {
+    background: #bb9a5c;
 }
 
 .contact {
      display: flex;
     align-items: center;
-    background: #d8bcbc;
     padding: 40px;
     gap: 20px;
 }
@@ -163,12 +172,12 @@ section:nth-of-type(even) {
 .map {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 1500px;
 }
 
 .contact h2 {
     margin-left: 1px;
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 0;
 }
 
@@ -182,13 +191,13 @@ section:nth-of-type(even) {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
 .contact-item .icon {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     object-fit: contain;
 }
 

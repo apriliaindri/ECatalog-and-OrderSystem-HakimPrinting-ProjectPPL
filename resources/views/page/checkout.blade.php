@@ -8,14 +8,12 @@
 </head>
 <body>
 
-{{-- HEADER --}}
 <div class="header">
     <h2>Checkout</h2>
 </div>
 
 <div class="content">
 
-    {{-- ALAMAT --}}
     <div class="alamat">
         <h4 class="title-icon">
             <img src="{{ asset('images/location.png') }}">
@@ -28,8 +26,6 @@
     </div>
 
     <div class="section-pink">
-
-        {{-- PRODUK --}}
         <div class="produk-item">
             <div class="produk-img">
                 <img src="{{ asset('images/img2.jpeg') }}">
@@ -41,73 +37,27 @@
                 <p class="jumlah">x 100</p>
             </div>
         </div>
-
     </div>
 
-    {{-- INFORMASI UNDANGAN --}}
     <div class="informasi">
         <h4 class="title-icon">
             <img src="{{ asset('images/note.png') }}">
             Informasi Undangan
         </h4>
 
-        <div class="info-item">
-            <span>Nama Lengkap Mempelai Pria</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Alamat Mempelai Pria</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Nama Orang Tua Mempelai Pria</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Nama Lengkap Mempelai Wanita</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Alamat Mempelai Wanita</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Nama Orang Tua Mempelai Wanita</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Tanggal Akad (Waktu Akad)</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Lokasi Akad</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Tanggal Resepsi (Waktu Resepsi)</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Lokasi Resepsi</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
-
-        <div class="info-item">
-            <span>Quotes (Opsional)</span>
-            <span>xxxxxxxxxxxxxxxx</span>
-        </div>
+        <div class="info-item"><span>Nama Lengkap Mempelai Pria</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Alamat Mempelai Pria</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Nama Orang Tua Mempelai Pria</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Nama Lengkap Mempelai Wanita</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Alamat Mempelai Wanita</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Nama Orang Tua Mempelai Wanita</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Tanggal Akad (Waktu Akad)</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Lokasi Akad</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Tanggal Resepsi (Waktu Resepsi)</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Lokasi Resepsi</span><span>xxxxxxxxxxxxxxxx</span></div>
+        <div class="info-item"><span>Quotes (Opsional)</span><span>xxxxxxxxxxxxxxxx</span></div>
     </div>
 
-    {{-- PENGIRIMAN --}}
     <div class="pengiriman">
         <h4 class="title-icon">
             <img src="{{ asset('images/shipping.png') }}">
@@ -122,9 +72,7 @@
         </div>
     </div>
 
-    {{-- CATATAN & TOTAL PESANAN --}}
     <div class="catatan">
-
         <div class="catatan-item">
             <span>Catatan:</span>
             <span>xxxxxxxxxx</span>
@@ -134,10 +82,8 @@
             <span>Total Pesanan (xxx lembar)</span>
             <span>Rp. xxxxx,xx</span>
         </div>
-
     </div>
 
-    {{-- METODE PEMBAYARAN --}}
     <div class="payment">
         <h4 class="title-icon">
             <img src="{{ asset('images/payment.png') }}">
@@ -152,10 +98,8 @@
             <option value="gopay">GoPay</option>
             <option value="mandiri">Mandiri</option>
         </select>
-
     </div>
 
-    {{-- BOTTOM BAR --}}
     <div class="checkout-bar">
         <div class="total">
             <p>Total Pembayaran</p>

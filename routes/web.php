@@ -121,6 +121,9 @@ Route::get('history-admin', function () {
     return view('admin.admin-history');
 });
 
+Route::get('/user-page', function () {
+    return view('page.user-page');
+})->name('page.user-page');
 
 
 // Uji Coba FE

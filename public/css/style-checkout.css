@@ -1,18 +1,19 @@
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
-    background: white;
+        background-color: #FDF8F0;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
     padding: 15px;
+    background-color: #FDF8F0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+border-bottom: 1px solid rgba(0,0,0,0.08);
     position: relative;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
 .header h2 {
@@ -23,20 +24,11 @@ body {
     padding-bottom: 100px;
 }
 
-.alamat {
-    background: white;
+.alamat,
+.informasi,
+.catatan {
+    background-color: #FDF8F0;
     padding: 30px;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-}
-
-.alamat h4 {
-    margin: 0 0 5px 0;
 }
 
 .alamat p {
@@ -45,15 +37,17 @@ body {
     color: black;
 }
 
-.section-pink {
-    background: #e5c1c1;
-    padding: 15px;
+.section-pink,
+.pengiriman,
+.payment {
+    background: #EBD1A0;
+      padding: 30px;
 }
 
 .produk-item {
     display: flex;
-    padding: 12px 0;
     align-items: center;
+    padding: 12px 0;
 }
 
 .produk-img img {
@@ -61,11 +55,6 @@ body {
     height: 90px;
     border-radius: 5px;
     object-fit: cover;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    margin: 0 0 5px 0;
     margin-left: 13px;
 }
 
@@ -77,12 +66,11 @@ body {
     margin: 0;
     font-size: 16px;
     font-weight: 500;
-    font-style: bold;
 }
 
 .harga {
     margin: 5px 0;
-    color: #8b2e2e;
+    color: #3a2c17;
     font-weight: bold;
     font-size: 14px;
 }
@@ -93,29 +81,13 @@ body {
     color: #555;
 }
 
-.payment {
-    background: #e5c1c1;
-    padding: 15px 20px;
-    border-top: 1px solid #eee;
-}
-
-.payment h4 {
-    margin: 0 0 10px 0;
-    font-size: 14px;
-}
-
-.payment p {
-    margin: 0;
-    font-size: 14px;
-}
-
 .payment select {
     width: 100%;
-    padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 13px;
-    background: white;
+    background-color: #FDF8F0;
+      padding: 10px;
 }
 
 .checkout-bar {
@@ -123,7 +95,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #f2f2f2;
+    background-color: #FDF8F0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,8 +114,8 @@ body {
 }
 
 .checkout-bar button {
-    background: #8b2e2e;
-    color: white;
+    background: #d6ae62;
+    color: #3a2c17;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -152,85 +124,28 @@ body {
 }
 
 .checkout-bar button:hover {
-    background: #6f2222;
+    background: #bb9a5c;
 }
 
-.informasi {
-    background: white;
-    padding: 30px;
-}
-
-.informasi h4 {
-    margin: 0 0 10px 0;
-    font-size: 14px;
-}
-
-.info-item {
+.info-item,
+.catatan-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
     padding: 15px 0;
     border-bottom: 1px solid #ddd;
-}
-
-.info-item span:first-child {
-    color: black;
-}
-
-.info-item span:last-child {
-    color: #999;
-}
-
-.pengiriman {
-    background: #e5c1c1;
-    padding: 30px;
-}
-
-.pengiriman h4 {
-    margin: 0 0 8px 0;
-    font-size: 14px;
-}
-
-.kurir {
-    margin: 0 0 10px 0;
-    font-size: 13px;
-    color: #333;
 }
 
 .pengiriman-detail {
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
-}
-
-.pengiriman-detail span:first-child,
-.pengiriman-detail span:last-child {
-    color: #333;
-}
-
-.pengiriman-detail span:last-child {
-    font-weight: 500;
-}
-
-.catatan {
-    background: white;
-    padding: 30px;
-}
-
-.catatan-item {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 12px;
     padding: 15px 0;
-    border-bottom: 1px solid #ddd;
 }
 
-.catatan-item span:first-child {
-    color: black;
-}
-
+.info-item span:last-child,
 .catatan-item span:last-child {
     color: #999;
 }
@@ -240,11 +155,17 @@ body {
     color: #333;
 }
 
+.kurir {
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #333;
+}
+
 .title-icon {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin: 0;
+    margin: 0 0 10px;
 }
 
 .title-icon img {

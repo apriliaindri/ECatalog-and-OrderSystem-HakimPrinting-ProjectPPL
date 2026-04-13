@@ -1,15 +1,16 @@
 body {
     margin: 0;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
+        background-color: #FDF8F0;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 15px 50px;
     height: 70px;
-    background: white;
+    background-color: #FDF8F0;
     box-sizing: border-box;
 }
 
@@ -24,19 +25,15 @@ body {
     position: relative;
 }
 
-.pink-top {
+.pink-top,
+.pink-bottom {
     height: 250px;
-    background: #e5c1c1;
+    background: #EBD1A0;
 }
 
 .white-middle {
     height: 250px;
-    background: white;
-}
-
-.pink-bottom {
-    height: 250px;
-    background: #e5c1c1;
+    background-color: #FDF8F0;
 }
 
 .card-container {
@@ -44,22 +41,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
     margin-top: 275px;
 }
 
 .card {
-    background: white;
+    width: 350px;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 30px;
     border-radius: 10px;
-    width: 350px;
+    background-color: #FDF8F0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin-bottom: 50px;
 }
 
 .form-group {
@@ -73,22 +65,19 @@ body {
 .input-box {
     display: flex;
     align-items: center;
-    border: 1px solid #c77;
-    border-radius: 8px;
     padding: 8px;
     margin-top: 5px;
-    background: white;
-}
-
-.input-box i {
-    margin-right: 8px;
+    border: 1px solid #644c2a;
+    border-radius: 8px;
+    background: transparent;
 }
 
 .input-box input {
+    width: 100%;
     border: none;
     outline: none;
-    width: 100%;
     font-size: 14px;
+    background: transparent;
 }
 
 .btn {
@@ -98,14 +87,14 @@ body {
 }
 
 .btn button {
-    background: #8b2e2e;
-    color: white;
-    border: none;
     padding: 10px 25px;
+    border: none;
     border-radius: 20px;
+    background: #d6ae62;
+    color: #3a2c17;
     cursor: pointer;
 }
 
 .btn button:hover {
-    background: #6f2222;
+    background: #bb9a5c;
 }

@@ -14,13 +14,7 @@
 
     <h2>Pesanan Selesai</h2>
 
-<form action="{{ route('logouthistory') }}" method="POST">
-    @csrf
-    <button type="submit" class="logout-link">
-        <img src="{{ asset('images/logout.png') }}" class="logout-icon">
-        Sign Out
-    </button>
-</form>
+    <a href="{{ route('page.user-page') }}" class="back">Back</a>
 </div>
 
 {{-- LIST PESANAN --}}
@@ -39,10 +33,10 @@
                     <p>Status Pengiriman</p>
                 </div>
 
-                    <div class="status">
-                        <span class="dot"></span>
-                        <p>Paket sampai ke penerima</p>
-                    </div>
+                <div class="status">
+                    <span class="dot"></span>
+                    <p>Paket sampai ke penerima</p>
+                </div>
             </div>
         </div>
 
@@ -65,10 +59,10 @@
                     <p>Status Pengiriman</p>
                 </div>
 
-                    <div class="status">
-                        <span class="dot"></span>
-                        <p>Paket sampai ke penerima</p>
-                    </div>
+                <div class="status">
+                    <span class="dot"></span>
+                    <p>Paket sampai ke penerima</p>
+                </div>
             </div>
         </div>
 
@@ -91,10 +85,10 @@
                     <p>Status Pengiriman</p>
                 </div>
 
-                    <div class="status">
-                        <span class="dot"></span>
-                        <p>Paket sampai ke penerima</p>
-                    </div>
+                <div class="status">
+                    <span class="dot"></span>
+                    <p>Paket sampai ke penerima</p>
+                </div>
             </div>
         </div>
 
@@ -103,6 +97,7 @@
             <span>xxxxxxxxxxxxxxxxxxxx</span>
         </div>
     </div>
+
 </div>
 
 </body>

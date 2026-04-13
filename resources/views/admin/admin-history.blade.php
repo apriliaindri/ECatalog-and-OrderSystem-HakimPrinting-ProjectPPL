@@ -8,25 +8,18 @@
 </head>
 <body>
 
-{{-- HEADER --}}
 <div class="header">
     <img src="{{ asset('images/logo.png') }}" class="logo">
-
     <h2>Pesanan Selesai</h2>
-
-<a href="/admin" class="back">Back</a>
+    <a href="/admin" class="back">Back</a>
 </div>
 
-
-        {{-- LIST PESANAN --}}
 <div class="container">
 
-    {{-- ITEM --}}
-    {{-- ===== PRODUK 1 ===== --}}
     <div class="order-card">
         <div class="left">
-            <h4>John Doe</h4
-        <p>Product A</p>
+            <h4>John Doe</h4>
+            <p>Product A</p>
             <p>x 200</p>
             <p class="price">Rp. xxxxx,xx</p>
 
@@ -36,10 +29,10 @@
                     <p>Status Pengiriman</p>
                 </div>
 
-                    <div class="status">
-                        <span class="dot"></span>
-                        <p>Paket sampai ke penerima</p>
-                    </div>
+                <div class="status">
+                    <span class="dot"></span>
+                    <p>Paket sampai ke penerima</p>
+                </div>
             </div>
         </div>
 
@@ -49,11 +42,10 @@
         </div>
     </div>
 
-    {{-- ===== PRODUK 2 ===== --}}
     <div class="order-card">
         <div class="left">
-            <h4>John Doe</h4> <!-- nama pengguna -->
-        <p>Product A</p>
+            <h4>Jane Smith</h4>
+            <p>Product B</p>
             <p>x 100</p>
             <p class="price">Rp. xxxxx,xx</p>
 
@@ -63,24 +55,23 @@
                     <p>Status Pengiriman</p>
                 </div>
 
-                    <div class="status">
-                        <span class="dot"></span>
-                        <p>Paket sampai ke penerima</p>
-                    </div>
+                <div class="status">
+                    <span class="dot"></span>
+                    <p>Paket sampai ke penerima</p>
+                </div>
             </div>
         </div>
 
         <div class="right">
             <p>No Resi:</p>
-            <span>xxxxxxxxxxxxxxxxxxxx</span>
+            <span>yyyyyyyyyyyyyyyyyyyy</span>
         </div>
     </div>
 
-    {{-- ===== PRODUK 3 ===== --}}
     <div class="order-card">
         <div class="left">
-            <h4>John Doe</h4>
-        <p>Product A</p>
+            <h4>Michael Lee</h4>
+            <p>Product C</p>
             <p>x 150</p>
             <p class="price">Rp. xxxxx,xx</p>
 
@@ -90,21 +81,20 @@
                     <p>Status Pengiriman</p>
                 </div>
 
-                    <div class="status">
-                        <span class="dot"></span>
-                        <p>Paket sampai ke penerima</p>
-                    </div>
+                <div class="status">
+                    <span class="dot"></span>
+                    <p>Paket sampai ke penerima</p>
+                </div>
             </div>
         </div>
 
         <div class="right">
             <p>No Resi:</p>
-            <span>xxxxxxxxxxxxxxxxxxxx</span>
+            <span>zzzzzzzzzzzzzzzzzzzz</span>
         </div>
     </div>
+
 </div>
-
-
 
 </body>
 </html>
